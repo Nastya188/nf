@@ -37,8 +37,11 @@ int main()
 	printf("Условие б) выполнено: %d\n", h);
 
 
-	double x3 = -2.235 * pow(10, -2), y3 = 2.23, z = 15.221;
-	double f = (exp(fabs(x3 - y3)) * pow(fabs(x3 - y3), x3 + y3)) / (atan(x3) + atan(z)) + pow((pow(x3, 6) + log(pow(y3, 2))), 1.0 / 3.0);
-	printf("%.3lf",f);
+	float x3 = -2.235 * pow(10, -2), y3 = 2.23, z = 15.221;
+	float f = (exp(fabs(x3 - y3)) * pow(fabs(x3 - y3), x3 + y3)) / (atan(x3) + atan(z)) + pow((pow(x3, 6) + log10(pow(y3, 2))), 1.0 / 3.0);
+	printf("%.3f",f);
+
+
+	
 }
 
